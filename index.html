@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TestForm</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Test Form</h1>
+        <form action="">
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Full Name">
+            <hr>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter Email">
+            <hr>
+            <label for="phone">Phone Number</label>
+            <input type="text" name="phone" id="phone" placeholder="Enter You Phone Number">
+            <hr>
+            <label for="Age">Age</label>
+            <div class="radiodiv">
+                <div class="radio-item">
+                    <input type="radio" name="Age" id="Age1">
+                    <label for="Age1">> 18</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" name="Age" id="Age2">
+                    <label for="Age2">18-35</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" name="Age" id="Age3">
+                    <label for="Age3">< 35</label>
+                </div>
+            </div>
+            <label for="Education">Education</label>
+            <div class="educationdiv">
+                <div class="checkbox-item">
+                    <input type="checkbox" name="Education" id="HighSchool">
+                    <label for="HighSchool">High School</label>
+                </div>
+                 <div class="checkbox-item">
+                    <input type="checkbox" name="Education" id="College">
+                    <label for="College">Some College</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" name="Education" id="AssDegree">
+                    <label for="AssDegree">Associate's Degree</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" name="Education" id="Bachelor">
+                    <label for="Bachelor">Bachelor's Degree</label>
+                </div>
+            </div>
+            <div class="datediv">
+                <label for="Date">Appointment Date</label>
+                <input type="date" name="Date" id="Date">
+            </div><hr>
+            <div><br>
+                <label for="reason">Reason for Appointment</label>
+                <select name="reason" id="reason">
+                    <option value="" disabled selected>Select Your Reason</option>
+                    <option value="">I'm not sure</option>
+                    <option value="">Because I need to</option>
+                    <option value="">I'm being forced to</option>
+                    <option value="">Because I want to</option>
+                    <option value="">Reason unknown</option>
+                </select>
+            </div><hr><br>
+            <div class="message">
+                <label for="">Message</label><br><br>
+                <textarea name="" id="" cols="30" rows="1" placeholder="Enter a Message" maxlength="50"></textarea>
+            </div><hr>
+            <div class="button">
+                <input type="submit" value="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
